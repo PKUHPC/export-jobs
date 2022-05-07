@@ -1,0 +1,2 @@
+PyMySQL==1.0.2
+pySSHA==1.0.0
