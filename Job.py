@@ -150,9 +150,9 @@ class ClusterJobs:
             {job_table}.time_end>{start} and \
             {job_table}.time_end<={end}".format(
                 start=start,end=end,
-                job_table = self.db_conf['job_table'],
-                qos_table = self.db_conf['qos_table'],
-                assoc_table = self.db_conf['assoc_table']
+                job_table = cluster_name + '_job_table',
+                qos_table = "qos_table",
+                assoc_table = cluster_name + '_assoc_table',
             )
 
         # TODO Add try except
