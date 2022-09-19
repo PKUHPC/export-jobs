@@ -1,8 +1,8 @@
 # 配置源作业信息数据库
 
-导出集群slurm数据库中已完成的作业信息到源作业信息数据库job_table表，用于SCOW的计费收费。
+此项目负责定时地将slurm集群中的已完成的作业信息移动到另一个数据库中，主要用于SCOW的计费收费。
 
-https://pkuhpc.github.io/SCOW/docs/mis/deployment/job_table
+https://pkuhpc.github.io/SCOW/docs/mis/deployment
 
 ## 配置说明
 
