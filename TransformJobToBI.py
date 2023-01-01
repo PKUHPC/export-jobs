@@ -28,8 +28,8 @@ class TransformJobToBI():
         list_length=len(cluster_jobs.job_list)
         #print(list_length)
         # return
-        insert_sql = "insert into job_table ({keys}) value ".format(
-            keys= ",".join(BIJob.insert_sql_keys())
+        insert_sql = "insert into job_table (`{keys}`) values ".format(
+            keys= "`,`".join(BIJob.insert_sql_keys())
         )
         index=0
         page=0
