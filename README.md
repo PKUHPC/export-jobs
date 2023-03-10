@@ -128,7 +128,7 @@ pip3 install -f /path/to/export_jobs/requirements.txt
 python3 /path/to/export_jobs/main.py
 ```
 
-5. 设置每10分钟执行的定时任务。频率可自己定义。
+5. 设置每10分钟执行的定时任务(取前一个10分钟的作业，**任务执行时间间隔不能大于10分钟，建议设置为10分钟**)
 
 ```bash
 echo "*/10 * * * * root python3 /path/to/export_jobs/main.py >> /path/to/export_jobs/job_export.log 2>&1" >> /etc/crontab
